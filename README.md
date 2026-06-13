@@ -30,27 +30,21 @@ todo reproducible con un solo comando.
 ---
 
 ## Estructura
-docker-infra/
+## Estructura
 
+```
+docker_infra/
 ├── app/
-
 │   ├── index.js        # API Node.js
-
 │   ├── package.json
-
 │   └── Dockerfile
-
 ├── nginx/
-
 │   └── nginx.conf      # Configuración del reverse proxy
-
 ├── docker-compose.yml
-
 ├── .env.example
-
 ├── .gitignore
-
 └── LICENSE
+```
 
 ---
 
