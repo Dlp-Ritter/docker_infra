@@ -30,3 +30,84 @@ todo reproducible con un solo comando.
 ---
 
 ## Estructura
+docker-infra/
+
+├── app/
+
+│   ├── index.js        # API Node.js
+
+│   ├── package.json
+
+│   └── Dockerfile
+
+├── nginx/
+
+│   └── nginx.conf      # Configuración del reverse proxy
+
+├── docker-compose.yml
+
+├── .env.example
+
+├── .gitignore
+
+└── LICENSE
+
+---
+
+## Instalación
+
+```bash
+git clone https://github.com/tu-usuario/docker-infra.git
+cd docker-infra
+cp .env.example .env
+```
+
+Edita `.env` con tus valores:
+MYSQL_ROOT_PASSWORD=rootpassword
+
+MYSQL_DATABASE=appdb
+
+MYSQL_USER=appuser
+
+MYSQL_PASSWORD=apppassword
+
+## Levantar el stack
+
+```bash
+docker-compose up -d
+```
+
+Servicios disponibles:
+
+- App vía Nginx: `http://localhost`
+- Healthcheck: `http://localhost/health`
+
+## Detener
+
+```bash
+docker-compose down
+```
+
+Para eliminar también los volúmenes:
+
+```bash
+docker-compose down -v
+```
+
+---
+
+## Próximos pasos
+
+Este stack es la base de mi laboratorio DevSecOps. Los siguientes repos
+de mi perfil se conectan con este:
+
+- [`cypress-e2e-suite`](https://github.com/tu-usuario/cypress-e2e-suite) — pruebas E2E contra la API levantada aquí.
+- [`jenkins-devsecops-pipeline`](https://github.com/tu-usuario/jenkins-devsecops-pipeline) — pipeline que construye, escanea y prueba este stack.
+
+---
+
+## Contacto
+
+
+
+
