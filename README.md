@@ -51,8 +51,8 @@ docker_infra/
 ## Instalación
 
 ```bash
-git clone https://github.com/tu-usuario/docker-infra.git
-cd docker-infra
+git clone https://github.com/Dlp-Ritter/docker_infra.git
+cd docker_infra
 cp .env.example .env
 ```
 
@@ -95,13 +95,5 @@ docker-compose down -v
 Este stack es la base de mi laboratorio DevSecOps. Los siguientes repos
 de mi perfil se conectan con este:
 
-- [`cypress-e2e-suite`](https://github.com/tu-usuario/cypress-e2e-suite) — pruebas E2E contra la API levantada aquí.
-- [`jenkins-devsecops-pipeline`](https://github.com/tu-usuario/jenkins-devsecops-pipeline) — pipeline que construye, escanea y prueba este stack.
-
----
-
-## Contacto
-
-
-
-
+- [`cypress-e2e-suite`](https://github.com/Dlp-Ritter/cypress-e2e-suite) — pruebas E2E contra la API levantada aquí.
+- [`jenkins-devsecops-pipeline`](https://github.com/Dlp-Ritter/jenkins-devsecops-pipeline) — pipeline que construye, escanea y prueba este stack.
